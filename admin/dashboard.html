@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1850, initial-scale=1.0">
+  <title>Macbook-Dashboard Admin Demo</title>
+  <link rel="stylesheet" href="macbook-dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="brand">BVOTE WEB</div>
+      <div class="stat-card">
+        <div class="stat-title">Kết Quả 24h</div>
+        <div class="stat-row"><span>Phê Duyệt</span><span id="stat-pheduyet">2</span></div>
+        <div class="stat-row"><span>Duyệt Code</span><span id="stat-duyetcode">1</span></div>
+        <div class="stat-row"><span>Lỗi Captcha</span><span id="stat-captcha">1</span></div>
+        <div class="stat-row"><span>Sai Mật Khẩu</span><span id="stat-saimk">3</span></div>
+        <div class="stat-row"><span>Thành Công</span><span id="stat-thanhcong">15</span></div>
+      </div>
+      <ul class="menu">
+        <li><span class="icon">🔑</span> Login AUTO</li>
+        <li><span class="icon">🛑</span> Login OFF</li>
+        <li><span class="icon">🔔</span> Thông Báo</li>
+        <li><span class="icon">🌐</span> Quản Lý IP</li>
+        <li><span class="icon">🔗</span> Quản Lý Link</li>
+        <li><span class="icon">⚙️</span> Cài Đặt Web</li>
+        <li><span class="icon">🚪</span> Đăng Xuất</li>
+      </ul>
+    </aside>
+    <main class="dashboard">
+      <div class="quick-actions">
+        <button class="btn-chrome">➕ Chrome Chỉ Định</button>
+        <input type="text" id="search" placeholder="🔍 Lọc tìm kiếm...">
+      </div>
+      <table class="access-log">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Tên Link</th>
+            <th>Tài Khoản</th>
+            <th>Mật Khẩu</th>
+            <th>Code OTP</th>
+            <th>IP Login</th>
+            <th>Loading</th>
+            <th>Kết Quả</th>
+            <th>Cookies</th>
+          </tr>
+        </thead>
+        <tbody id="log-body">
+        </tbody>
+      </table>
+    </main>
+  </div>
+  <script src="macbook-dashboard.js"></script>
+</body>
+</html>

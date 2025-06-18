@@ -1,0 +1,7 @@
+body { font-family: Arial,sans-serif; background: #f6f6fb; margin: 0; }
+th,td { padding: 12px 6px; border:1px solid #eee; text-align: left; }
+ul { list-style: none; padding: 0; }
+ul li { margin: 14px 0; font-weight: bold; cursor: pointer; }
+ul li:hover { color: #51f58a; }
+.sidebar-admin { box-shadow: 2px 0 12px #0002; }
+button { cursor:pointer; }
